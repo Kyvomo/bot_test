@@ -14,6 +14,8 @@ dp = Dispatcher()
 
 
 
+
+
 @dp.message(Command(commands=['start']))
 async def command_start_handler(message: Message):
     await message.answer(f"Привіт, яку тваринку хочеш взяти собі додому?")
